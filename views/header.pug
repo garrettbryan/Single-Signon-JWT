@@ -1,0 +1,36 @@
+div.headerspacer
+  header#header
+    div.container-fluid
+      div.row
+        div.col-sm-3#logo
+          p#image-marker Your SSO App
+            //img(src="https://picsum.photos/500x160?random")
+        div.col-sm-9
+          div.navcontrol
+            div.navbar.navbar-default.navbar-fixed-top
+              div.navbar-header
+                button.navbar-toggle.collapsed(
+                  data-target=".navbar-collapse"
+                  data-toggle="collapse"
+                  type="button"
+                )
+                  span.sr-only Toggle navigation
+                  span.icon-bar
+                  span.icon-bar
+                  span.icon-bar
+              div.navbar-collapse.collapse.custom-nav-class
+                ul.nav
+                  if !user
+                    li
+                      a(href="/login") Login
+                    li
+                      a(href="/register") Register
+                  else
+                    li
+                      a(href="/hq") HQ
+                    li
+                      a(href="/affiliates") Affiliates
+                    li
+                      a(href="/profile") #{user.username} Profile
+                    li
+                      a(href="/logout") Logout

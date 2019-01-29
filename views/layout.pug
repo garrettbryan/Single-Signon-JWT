@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= title
+    script(type="text/javascript" src="/javascripts/jquery.js")
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    block stylesheets
+  body
+    div.ccm-page.page-type-page.page-template-right-sidebar
+      div.master-container.innerpage
+        include ./header.pug
+        div.container-fluid
+          block content
+        include ./footer.pug
+    block bodyscripts

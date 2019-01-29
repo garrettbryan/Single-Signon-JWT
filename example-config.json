@@ -1,0 +1,18 @@
+{
+  "env": "development",
+  "test": "value",
+  "secret": "GUID",
+  "database": "forum",
+  "mongo": {
+    "host": "",
+    "port": "",
+    "username": "",
+    "password": "",
+    "database": "",
+    "uri": "mongodb://localhost:27017/sso"
+  },
+  "port": 3002,
+  "logStyle": "dev",
+  "jwtSecret": "GUID",
+  "googleMaps": "https://maps.googleapis.com/maps/api/js?key=<your-google-key>&callback=initMap"
+}

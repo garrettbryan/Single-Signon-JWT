@@ -1,0 +1,55 @@
+extends layout
+
+block content
+  <div class="main">
+    <form action="/profile/update" method="post" id="form1">
+
+      div.form-group
+        <label for="username">Username:</label>
+        <input class="form-control" type="text" id="username" name="username" value="#{user.username}" disabled >
+
+      div.form-group
+        <label for="picture">Picture:</label>
+        <input class="form-control" type="text" id="picture" name="picture" value="#{user.picture}">
+
+      div.form-group
+        <label for="fullname">Full Name:</label>
+        <input class="form-control" type="text" id="fullname" name="fullname" value="#{user.fullname}">
+
+      div.form-group
+        <label for="firstName">First Name:</label>
+        <input class="form-control" type="text" id="firstName" name="firstName" value="#{user.firstName}">
+
+      div.form-group
+        <label for="lastName">Last Name:</label>
+        <input class="form-control" type="text" id="lastName" name="lastName" value="#{user.lastName}">
+
+      div.form-group
+        <label for="location">Location:</label>
+        <input class="form-control" type="text" id="location" name="location" value="#{user.location}">
+
+      div.form-group
+        <label for="affiliate">Affiliate:</label>
+        <input class="form-control" type="text" id="affiliate" name="affiliate" value="#{user.affiliate}">
+
+      div.form-group
+        <label for="signature">Signature:</label>
+        <input class="form-control" type="text" id="signature" name="signature" value="#{user.signature}">
+
+      div.form-group
+        <label for="aboutme">About Me:</label>
+        <input class="form-control" type="text" id="aboutme" name="aboutme" value="#{user.aboutme}">
+
+      div.form-group
+        <label for="website">Website:</label>
+        <input class="form-control" type="text" id="website" name="website" value="#{user.website}">
+
+      div.form-group
+        <label for="birthday">Birthday:</label>
+        <input class="form-control" type="text" id="birthday" name="birthday" value="#{user.birthday}">
+      
+      div.form-group
+        <button type="submit" form="form1" value="Save">Save</button>
+
+    </form>
+  </div>
